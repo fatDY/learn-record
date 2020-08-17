@@ -28,19 +28,21 @@ import java.util.List;
  */
 
 public class Solution110 {
-    public int count=0;
-
-    public boolean isBalanced2(TreeNode root) {
-        return depth(root) >= 0;
+    public boolean falg=true;
+    public boolean isBalanced(TreeNode root) {
+        dfs(root);
+        return falg;
     }
-
-    private int depth(TreeNode root) {
-        int left, right;
-        return root == null ? 0:
-                (left = depth(root.left)) < 0 ? -1:
-                        (right = depth(root.right)) < 0 ? -1:
-                                Math.abs(left - right) > 1 ? -1:
-                                        Math.max(left, right) + 1;
+    public int dfs(TreeNode node){
+        if(node==null){
+            return 0;
+        }
+        int right=dfs(node.right)+1;
+        int left=dfs(node.left)+1;
+        if(Math.abs(right-left)>1){
+            falg = false;
+        }
+        return Math.max(right,left);
     }
 
     public static void main(String[] args) {
@@ -78,7 +80,7 @@ public class Solution110 {
         treeNode8.left=treeNode14;
         treeNode8.right=treeNode15;
 
-        boolean balanced2 = solution110.isBalanced2(treeNode);
+        boolean balanced2 = solution110.isBalanced(treeNode);
 
         System.out.println(balanced2);
     }
