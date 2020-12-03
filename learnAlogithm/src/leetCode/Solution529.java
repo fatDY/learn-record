@@ -1,6 +1,4 @@
-package test.leetCode;
-
-import jdk.nashorn.internal.ir.CallNode;
+package leetCode;
 
 /**
  * 让我们一起来玩扫雷游戏！

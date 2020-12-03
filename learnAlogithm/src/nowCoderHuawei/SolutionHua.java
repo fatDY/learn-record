@@ -1,4 +1,4 @@
-package test.nowCoderHuawei;
+package nowCoderHuawei;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
