@@ -1,4 +1,4 @@
-package test.leetCode;
+package leetCode;
 
 public class Solution130 {
     int n, m;

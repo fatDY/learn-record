@@ -1,4 +1,4 @@
-package test.nowCoderHuawei;
+package nowCoderHuawei;
 
 import java.util.*;
 

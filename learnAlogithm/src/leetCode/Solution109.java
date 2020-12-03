@@ -1,4 +1,4 @@
-package test.leetCode;
+package leetCode;
 
 /**
  * 给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。
@@ -83,22 +83,22 @@ class ListNode {
     }
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+//class TreeNode {
+//    int val;
+//    TreeNode left;
+//    TreeNode right;
+//
+//    TreeNode() {
+//    }
+//
+//    TreeNode(int val) {
+//        this.val = val;
+//    }
+//
+//    TreeNode(int val, TreeNode left, TreeNode right) {
+//        this.val = val;
+//        this.left = left;
+//        this.right = right;
+//    }
+//}
 

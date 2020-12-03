@@ -1,6 +1,5 @@
-package test.leetCode;
+package leetCode;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 /**

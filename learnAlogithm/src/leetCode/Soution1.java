@@ -1,4 +1,4 @@
-package test.leetCode;
+package leetCode;
 
 public class Soution1 {
     public int[] twoSum(int[] nums, int target) {

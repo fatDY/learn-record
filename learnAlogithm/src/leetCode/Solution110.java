@@ -1,9 +1,4 @@
-package test.leetCode;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package leetCode;
 
 /**
  * 给定一个二叉树，判断它是否是高度平衡的二叉树。
