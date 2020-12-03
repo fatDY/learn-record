@@ -1,6 +1,6 @@
 package jianzhi;
 
-import java.util.*;
+import java.util.Stack;
 
 /**
  * Definition for singly-linked list.
@@ -30,6 +30,7 @@ public class SolutionJianZhi06 {
         return a;
     }
 }
+
 class ListNode {
     int val;
     ListNode next;

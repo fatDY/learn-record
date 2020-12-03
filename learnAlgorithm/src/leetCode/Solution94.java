@@ -59,6 +59,7 @@ public class Solution94 {
 
 
 }
+
 //Definition for a binary tree node.
 class TreeNode {
     int val;

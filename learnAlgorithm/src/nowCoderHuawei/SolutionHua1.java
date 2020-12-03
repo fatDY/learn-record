@@ -1,6 +1,9 @@
 package nowCoderHuawei;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * 明明想在学校中请一些同学一起做一项问卷调查，
