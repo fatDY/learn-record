@@ -119,9 +119,9 @@ InheritableThreadLocal  重写了ThreadLocal 的 childValue，getMap，createMap
 
 ​	**线程池在使用的时候，例如上述代码中的submit操作，如果线程池内线程的数量小于开始设定的线程数量，则会把当前的任务作为第一个任务并创建新的线程去执行。所以上述代码中前两次使用线程池submit task的时候，变量分别传递成功。因为线程池的线程是主线程创建的子线程。而在submit task的时候，如果线程池中线程数量已经达到设定值，则不会创建线程，而是复用线程池中的线程，所以线程池中线程的本地变量也是复用的创建时设置的变量。因而出现后两次变量传递不成功的现象。**
 
-![image-20201204221820919](C:\Users\yudu\AppData\Roaming\Typora\typora-user-images\image-20201204221820919.png)
+![image-20201204221820919](src\main\resources\forkjoin\image-20201204221820919.png)
 
-![image-20201204221841857](C:\Users\yudu\AppData\Roaming\Typora\typora-user-images\image-20201204221841857.png)
+![image-20201204221841857](src\main\resources\forkjoin\image-20201204221841857.png)
 
 **解决方案：**
 
